@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Add package</h1>
+<form action="admin" method="POST">
+    <pre>Sender name<input type="text" name="senderName"></pre>
+    <pre>Receiver name<input type="text" name="receiverName"></pre>
+    <pre>Name <input type="text" name="name"></pre>
+    <pre>Description<input type="text" name="description"></pre>
+    <pre>Sender city<input type="text" name="senderCity"></pre>
+    <pre>Destination city<input type="text" name="destinationCity"></pre>
+
+    <input type="submit" value="Add package" >
+</form>
+
+<h1>Remove package</h1>
+<form action="admin" method="POST">
+    <pre>package ID<input type="text" name="packageIdRemove">
+    <input type="submit" value="Delete package" ></pre>
+</form>
+
+<h1>Register package for tracking</h1>
+<form action="admin" method="POST">
+    <pre>package ID<input type="text" name="packageIdRegister">
+    <input type="submit" value="Register package" ></pre>
+</form>
+
+<h1>Update package status</h1>
+<form action="admin" method="POST">
+    <pre>package ID<input type="text" name="packageIdStatus"></pre>
+    <pre>City <input type="text" name="city"></pre>
+    <pre>Time <input type="text" name="time"></pre>
+    <input type="submit" value="Update package" >
+</form>
+
+<h1>All packages</h1>
+<form action="admin" method="GET">
+    <input type="submit" value="All packages">
+</form>
+
+</body>
+</html>
